@@ -1,9 +1,9 @@
 package model;
 import java.time.LocalDate;
 
-public class Lote {
+public class Lot {
 
-    public Lote(int quantity, LocalDate validity, Product product) {
+    public Lot(int quantity, LocalDate validity, Product product) {
         this.quantity = quantity;
         this.validity = validity;
         this.product = product;

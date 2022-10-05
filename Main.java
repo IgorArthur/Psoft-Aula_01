@@ -1,20 +1,16 @@
-import java.time.LocalDate;
-
-import model.Lote;
-import model.Product;
+import interFace.MainInterface;
 
 class Main {
-    public static void main(String[] args) {
-        Product s10 = new Product(
-                "Galaxy S10",
-                "Samsung",
-                2000.00);
+    public static void main(String[] args) throws Exception {
+        MainInterface mainInterface = new MainInterface();
 
-        Lote lote = new Lote(10, LocalDate.parse("2019-05-11"), s10);
-
+        mainInterface.init();
     }
+
 }
 
-// Produtos com nome, fabricante e peça.
-// Podem existir lotes associados aos produtos, com quantidade e data de
-// fabricação.
+
+// O sistema deve permitir a operação de criar produtos considerando nome, fabricante e preço;
+// O sistema deve permitir a operação de criar lotes considerando produto, quantidade e data de validade;
+// O sistema deve permitir a operação de listar produtos;
+// O sistema deve permitir a operação de listar lotes ;
